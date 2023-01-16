@@ -1,0 +1,94 @@
+.container{
+    width: 100%;
+    height: 60vh;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container form{
+    width: 100%;
+    max-width: 500px;
+    padding: 50px 30px 20px;
+    background: #fff;
+    border-radius: 4px;    
+    position: relative;
+}
+
+.input-group{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    position: relative;
+}
+.input-group label{
+    flex-basis: 28%;
+}
+.input-group input, .input-group textarea{
+    flex-basis: 70%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 10px 0;
+    border-bottom: 1px solid #999;
+    color: #333;
+    font-size: 16px;
+}
+::placeholder{
+    font-size: 14px;
+}
+
+form button{
+    background: hsl(240, 2%, 25%);
+    color: #fff;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    padding: 10px 40px;
+    outline: 0;
+    cursor: pointer;
+    display: block;
+    margin: 30px auto 10px;
+}
+
+.input-group span{
+    position: absolute;
+    max-width: 120px;
+    right: 15px;
+    font-size: 0.7em;
+    color: red;
+}
+
+.input-group span i{
+    color: seagreen;
+}
+
+#submit_error{
+    font-size: 1em;
+    color: red;
+}
+
+#message_error{
+    padding-top: 80px;        
+}
+
+#pass_error{
+    right: 50px;
+}
+
+#toggle{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background: url(show.png);
+    background-size: cover;
+    cursor: pointer;
+}
+
+#toggle.hide{
+    background: url(hide.png);
+    background-size: cover;
+}
